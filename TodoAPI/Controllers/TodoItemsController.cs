@@ -22,7 +22,8 @@ namespace TodoAPI.Controllers
             if (_context.TodoItems.Count() == 0)
             {
                 _context.TodoItems.Add(new TodoItem { Name="Lab1", IsComplete =true});
-                _context.TodoItems.Add(new TodoItem { Name = "Lab2", IsComplete = false })
+                _context.TodoItems.Add(new TodoItem { Name = "Lab2", IsComplete = false });
+                _context.TodoItems.Add(new TodoItem { Name = "Quiz2", IsComplete = true });
             }
         }
 
